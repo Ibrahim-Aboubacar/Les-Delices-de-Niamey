@@ -1,1 +1,5 @@
-const nav = document.querySelector('.nav')
+const nav = document.querySelector('.nav');
+const navBtn = document.createElement('div');
+navBtn.innerHTML = "<span></span><span></span><span></span>"
+navBtn.classList.add('nav_btn')
+nav.appendChild(navBtn)
