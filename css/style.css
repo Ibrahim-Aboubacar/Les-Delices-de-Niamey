@@ -363,6 +363,23 @@ button[type="submit"]{
     background-color: #fee0b9;
     border-radius: 10px;
 }
+.nav.nav.opened .nav_btn{
+    /* position: relative; */
+}
+.nav.nav .nav_btn span{
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+}
+.nav.nav.opened .nav_btn span:nth-child(2){
+    transform: translateX(250%);
+}
+.nav.nav.opened .nav_btn span:nth-child(1){
+    transform: translate(4px, -4px)  rotate(45deg);
+}
+.nav.nav.opened .nav_btn span:nth-child(3){
+    transform: translate(4px, 1px) rotate(-45deg);
+}
+
 @media screen and (max-width: 1450px) {
     .presentation .pres-photo,
     .presentation .pres-text{
@@ -419,7 +436,7 @@ button[type="submit"]{
         right: -350px;
         transform: skewX(25deg);
         transform-origin: top;
-        transition: transform 300ms ease-in-out, right 300ms ease-in-out;
+        transition: transform 400ms ease-in-out, right 300ms ease-in-out;
     }
     .nav.opened nav{
         right: 0px;
