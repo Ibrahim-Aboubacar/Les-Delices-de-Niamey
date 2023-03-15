@@ -331,7 +331,7 @@ button[type="submit"]{
 }
 .nav_btn{
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
@@ -376,7 +376,8 @@ button[type="submit"]{
 .nav.nav.opened .nav_btn span:nth-child(3){
     transform: translate(4px, 1px) rotate(-45deg);
 }
-.site_icon{
+.site_icon,
+.nav h1{
     display: none;
 }
 @media screen and (max-width: 1450px) {
@@ -402,13 +403,28 @@ button[type="submit"]{
     }
 }
 @media screen and (max-width: 1000px) {
+    .nav h1{
+        display: block;
+        color: #fee0b9;
+        font-size: 1rem;
+    }
     .site_icon{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        display: block;
+        display: flex;
         width: 40px;
-        aspect-ratio: 1 / 1;
+        height: 40px;
+        left: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .site_icon img{
+        border-radius: 50%;
+        border: 2px solid #fee0b9;
+        width: 100%;
+        height: 100%;
+        
     }
     header{
         display: flex;
