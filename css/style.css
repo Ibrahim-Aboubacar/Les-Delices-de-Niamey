@@ -144,13 +144,15 @@ footer{
     padding-top: 25px;
     padding-bottom: 75px;
     background-color: #4a1f06;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat();
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 10px;
 }
 .pied-de-page .section{
-    width: calc(100% / 5);
+    /* width: calc(100% / 5); */
+    width: calc(100%);
     padding: 0 30px;
     color: #fff;
     display: flex;
@@ -235,7 +237,7 @@ h1{
 }
 .contact .contact-form{
     margin-top: 25px;
-    width: 60%;
+    width: 70%;
     display: flex;
     
 }
@@ -281,8 +283,9 @@ button[type="submit"]{
 .noscontacts .contactss{
     box-shadow: 20px 20px 20px #4a1f0633;
     position: absolute;
-    top: 45%;
-    left: 15%;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -290,7 +293,7 @@ button[type="submit"]{
     gap: 20px;
     background-color: #fff;
     width: 60%;
-    padding: 30px;
+    padding: 15px;
     border-radius: 10px;
 }
 .contact-form-deux{
@@ -312,4 +315,67 @@ button[type="submit"]{
 .noscontacts-deux p{
     font-size: 1.4em;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1450px) {
+    .presentation .pres-photo,
+    .presentation .pres-text{
+        overflow: hidden;
+        width: 48%;
+        border-radius: 10px;
+    }
+    .contact .contact-form{
+        width: 80%;
+    }
+    .noscontacts .contactss{
+        top: 35%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contact .contact-form{
+        width: 100%;
+    }
+    .noscontacts .contactss{
+        top: 25%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .presentation{
+        flex-direction: column-reverse;
+    }
+    .presentation .pres-photo,
+    .presentation .pres-text{
+        width: 95%;
+    }
+    .contact .contact-form{
+        /* width: 100%; */
+    }
+    .noscontacts .contactss {
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .presentation .pres-text{
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .contact .contact-form{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact .contact-form form{
+        width: 100%;
+    }
+    .contact .contact-form .noscontacts {
+        width: 100%;
+    }
+    .noscontacts .contactss {
+        position: static;
+        transform: translateX(0);
+        width: 90%;
+        margin-inline: auto;
+      }
 }
