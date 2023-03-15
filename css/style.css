@@ -145,10 +145,10 @@ footer{
     padding-bottom: 75px;
     background-color: #4a1f06;
     display: grid;
-    grid-template-columns: repeat();
-    /* justify-content: center; */
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: center;
     /* align-items: center; */
-    gap: 10px;
+    gap: 20px;
 }
 .pied-de-page .section{
     /* width: calc(100% / 5); */
