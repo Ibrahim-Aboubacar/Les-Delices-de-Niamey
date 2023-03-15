@@ -68,4 +68,7 @@ PS C:\xampp\htdocs\Amina> git commit -m "premier comit du site"
  create mode 100644 nosservices.html
  create mode 100644 quisommesnous.html
  create mode 100644 readme.md
+PS C:\xampp\htdocs\Amina>  git commit -a -m "Commit du site avec readme.md de modifier"        
+[master ea59323] Commit du site avec readme.md de modifier
+ 1 file changed, 50 insertions(+), 1 deletion(-)
 PS C:\xampp\htdocs\Amina> 
