@@ -140,19 +140,16 @@ footer{
     top: -15px;
     right: 0;
     left: 0;
-    /* padding-top: 50px; */
     padding-top: 25px;
     padding-bottom: 75px;
     background-color: #4a1f06;
     display: grid;
     grid-template-columns: repeat(auto-fill, 280px);
     justify-content: center;
-    /* align-items: center; */
     gap: 20px;
 }
 .pied-de-page .section{
-    /* width: calc(100% / 5); */
-    width: calc(100%);
+    width: 100%;
     padding: 0 30px;
     color: #fff;
     display: flex;
@@ -188,14 +185,16 @@ h1{
     margin: 25px 0px;
 }
 .nosproduits{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
     gap: 20px;
     margin: 0px 20px;
     margin-top: 50px;
 }
 .produit{
-    width: calc((100% /4 ) - 100px);
+    /* width: calc((100% /4 ) - 100px); */
+    width: 100% ;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 50px #4a1f0644;
@@ -316,7 +315,14 @@ button[type="submit"]{
     font-size: 1.4em;
     margin-bottom: 50px;
 }
-
+.signature{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-block: 3rem;
+    text-align: center; 
+    color: #fff;
+}
 @media screen and (max-width: 1450px) {
     .presentation .pres-photo,
     .presentation .pres-text{
@@ -347,9 +353,7 @@ button[type="submit"]{
     .presentation .pres-text{
         width: 95%;
     }
-    .contact .contact-form{
-        /* width: 100%; */
-    }
+    
     .noscontacts .contactss {
         top: 35%;
         left: 50%;
@@ -377,5 +381,11 @@ button[type="submit"]{
         transform: translateX(0);
         width: 90%;
         margin-inline: auto;
-      }
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+    .signature{
+        position: static;
+    }
 }
