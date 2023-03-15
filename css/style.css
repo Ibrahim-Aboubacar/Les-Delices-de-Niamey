@@ -94,6 +94,12 @@ img{
     width: 35%;
     border-radius: 10px;
 }
+.img_desktop{
+    display: inline;
+}
+.img_mobile{
+    display: none;
+}
 .presentation .pres-photo{
     box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
     height: fit-content;
@@ -360,6 +366,20 @@ button[type="submit"]{
         transform: translateX(-50%);
         width: 80%;
     }
+}
+@media screen and (max-width: 820px) {
+    .img_desktop{
+        display: none;
+    }
+    .img_mobile{
+        display: inline;
+    }
+    .entete-image .entete-image-texte{
+        font-size: 1.5rem;
+    }
+    /* p.entete-image-texte * >{
+        font-size: inherit;
+    } */
 }
 @media screen and (max-width: 620px) {
     .presentation .pres-text{
