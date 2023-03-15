@@ -72,3 +72,7 @@ PS C:\xampp\htdocs\Amina>  git commit -a -m "Commit du site avec readme.md de mo
 [master ea59323] Commit du site avec readme.md de modifier
  1 file changed, 50 insertions(+), 1 deletion(-)
 PS C:\xampp\htdocs\Amina> 
+
+
+> envovez git push -u origin main
+> git commit -a -m "{commentaire}"
