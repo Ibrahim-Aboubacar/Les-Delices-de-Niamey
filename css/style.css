@@ -1,0 +1,315 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fee0b9;
+}
+.entete-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+.entete-image .entete-image-texte{
+    /* position: absolute; */
+    font-size: 2.3em;
+    /* bottom: -90px; */
+    padding: 40px 0px;
+    background-color: rgb(212, 127, 54);
+    color: #fee0b9;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 3px solid #4a1f06; */
+}
+.entete-image .entete-image-texte .entete-image-texte-nom{
+    font-weight: 600;
+    font-family: 'Monotype Corsiva', serif;
+    color: #4a1f06;
+    font-size: 1.25em;
+    margin-left: .25em;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a1f06;
+}
+.nav nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav nav ul li{
+    background-color: #4a1f06;
+    list-style: none;
+    min-width: 150px;
+}
+.nav nav ul li a{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fee0b9;
+    text-decoration: none;
+    border-left:  1px solid #4a1f06;
+    border-right: 1px solid #4a1f06;
+    padding: 0 10px;
+    background-color: #4a1f06;
+    transition: 350ms letter-spacing ease-in-out,150ms background-color ease-in-out;
+}
+.nav nav ul li.active a,
+.nav nav ul li a:hover{
+    background-color: #965419;
+    /* box-shadow: inset 5px 0px 15px #4a1f06,
+    inset -5px 0px 15px #4a1f06; */
+    letter-spacing: .10em;
+}
+.texte-particulier{
+    font-weight: 600;
+    color: #4a1f06;
+}
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.presentation .pres-photo,
+.presentation .pres-text{
+    overflow: hidden;
+    width: 35%;
+    border-radius: 10px;
+}
+.presentation .pres-photo{
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+    height: fit-content;
+    display: flex;
+}
+
+.presentation .pres-photo img{
+    width: 100%;
+}
+.presentation .pres-text{
+    padding: 20px 70px;
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bouton{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #4a1f06;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 10px 10px 10px #00000000;
+    transition: 350ms;
+}
+.bouton:hover{
+    letter-spacing: .07em;
+    border-radius: 20px;
+    background-color: #6c2d08;
+    box-shadow: 10px 10px 10px #00000033;
+}
+footer{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    border-top: 20px dotted #4a1f06;
+}
+.pied-de-page{
+    position: absolute;
+    border-top: 20px dotted #fee0b9;
+    top: -15px;
+    right: 0;
+    left: 0;
+    /* padding-top: 50px; */
+    padding-top: 25px;
+    padding-bottom: 75px;
+    background-color: #4a1f06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pied-de-page .section{
+    width: calc(100% / 5);
+    padding: 0 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pied-de-page .section p{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.pied-de-page .section .titre-section{
+    margin-bottom: 10px;
+}
+.pied-de-page .section a{
+    text-decoration: none;
+    color: #fff;
+}
+.pied-de-page .section a:hover{
+    text-decoration: underline;
+}
+.corps-section{
+    border-left: 2px solid #fff;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin: 25px 0px;
+}
+.nosproduits{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 20px;
+    margin-top: 50px;
+}
+.produit{
+    width: calc((100% /4 ) - 100px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #4a1f0644;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produit .img-produit{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.produit .img-produit img{
+    transition: transform 800ms ease-in-out;
+    transform: scale(1.2);
+}
+.produit:hover .img-produit img{
+    transform: scale(1);
+}
+.produit .text-produit{
+    display: flex;
+    flex-direction: column;
+}
+.produit .text-produit .titre-produit{
+    text-align: center;
+    font-size: 1.4em;
+    margin: 10px 0px;
+}
+.produit .text-produit .desc-produit{
+    font-size: 1.2em;
+    margin: 10px 20px;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .contact-form{
+    margin-top: 25px;
+    width: 60%;
+    display: flex;
+    
+}
+.contact .contact-form form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.contact .contact-form form input,
+.contact .contact-form form textarea{
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    padding: 15px 10px;
+    transition: outline-color 350ms ease-in-out;
+    outline:2px solid transparent;
+}
+.contact .contact-form form input:focus-visible,
+.contact .contact-form form textarea:focus-visible{
+    outline-color: #4a1f06;
+}
+.contact .contact-form form textarea{
+    min-height: 150px;
+    max-height: 150px;
+    resize: none;
+}
+button[type="submit"]{
+    width: 100%;
+    font-size: 1.2em;
+    border-color: transparent;
+}
+.contact .contact-form .noscontacts{
+    position: relative;
+    width: 50%;
+}
+.noscontacts .contactss{
+    box-shadow: 20px 20px 20px #4a1f0633;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    width: 60%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-form-deux{
+    background-color: #4a1f06;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.noscontacts-deux{
+    padding: 0px 30px;
+    color: #fff;
+}
+.noscontacts-deux h2{
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.noscontacts-deux p{
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
