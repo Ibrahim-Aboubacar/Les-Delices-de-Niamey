@@ -11,12 +11,16 @@ initTogglerBtn(nav)
 // functions
 function initTogglerBtn(nav){
     const navBtn = document.createElement('div');
+    navBtn.setAttribute('tabindex', "0")
     navBtn.innerHTML = "<span></span><span></span><span></span>"
     navBtn.classList.add('nav_btn')
     nav.appendChild(navBtn)
     navBtn.onclick = (e) =>{
         nav.classList.toggle('opened');
     }
+    document.addEventListener('keydown', (e) => {
+        if(e.key ==='m' || e.key ==='M' ) nav.classList.toggle('opened');
+    })
 }
 
 function initSiteIcon(nav){

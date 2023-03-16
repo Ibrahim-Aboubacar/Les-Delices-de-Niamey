@@ -387,7 +387,8 @@ button[type="submit"]{
     transform: translate(4px, 1px) rotate(-45deg);
 }
 .site_icon,
-.nav h1{
+.nav h1,
+.nav_btn{
     display: none;
 }
 @media screen and (max-width: 1450px) {
@@ -470,6 +471,9 @@ button[type="submit"]{
         transform: skewX(25deg);
         transform-origin: top;
         transition: transform 400ms ease-in-out, right 300ms ease-in-out;
+    }
+    .nav .nav_btn{
+        display: flex;
     }
     .nav.opened nav{
         right: 0px;
