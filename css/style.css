@@ -339,6 +339,10 @@ button[type="submit"]{
     text-align: center; 
     color: #fff;
 }
+.signature a{
+    color: #fee0b9;
+    font-size: 1.2rem;
+}
 .nav_btn{
     position: absolute;
     right: 15px;
