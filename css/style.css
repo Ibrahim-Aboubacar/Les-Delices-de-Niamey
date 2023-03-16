@@ -134,25 +134,34 @@ img{
     background-color: #6c2d08;
     box-shadow: 10px 10px 10px #00000033;
 }
-footer{
+.footer{
     position: relative;
     margin-top: 50px;
     width: 100%;
     border-top: 20px dotted #4a1f06;
 }
-.pied-de-page{
+.footer_deco{
     position: absolute;
     border-top: 20px dotted #fee0b9;
     top: -15px;
     right: 0;
     left: 0;
-    padding-top: 25px;
-    padding-bottom: 75px;
+    background-color: #4a1f06;
+    /* padding-top: px; */
+    /* z-index: -1; */
+}
+.pied-de-page{
     background-color: #4a1f06;
     display: grid;
     grid-template-columns: repeat(auto-fill, 280px);
+    grid-template-rows: repeat(auto-fit, 150px);
     justify-content: center;
     gap: 20px;
+    row-gap: 20px;
+}
+.footer_texte{
+    padding-top: 20px;
+    background-color: #4a1f06;
 }
 .pied-de-page .section{
     width: 100%;
@@ -321,9 +330,10 @@ button[type="submit"]{
     font-size: 1.4em;
     margin-bottom: 50px;
 }
+
 .signature{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     width: 100%;
     padding-block: 3rem;
     text-align: center; 
@@ -522,7 +532,7 @@ button[type="submit"]{
         width: 90%;
         margin-inline: auto;
     }
-    footer{
+    .footer{
         font-size: 1.5rem;
     }
     .signature{
