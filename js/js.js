@@ -1,8 +1,6 @@
 const nav = document.querySelector('.nav');
 
 
-console.log('1')
-
 // call to functions
 initSiteIcon(nav)
 initPageTitle(nav)
